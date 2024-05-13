@@ -1,2 +1,2 @@
 # pag-web-Adri
-Proyecto en
+Proyecto de diseño web
