@@ -1,0 +1,118 @@
+*{
+    font-family: comic system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cajas{
+  background: #503459;
+}
+.home{
+  background: #81638b;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 20px;
+    width: 20px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.bg-img{
+    background-image: url(https://media.istockphoto.com/id/1341348395/es/foto/vieja-tabla-de-madera-marr%C3%B3n-oscuro.webp?s=2048x2048&w=is&k=20&c=VpyCGEVbrTTDfdo8ro7ljysK5e1_hIFEaVdbZZaxAyk=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: clamp( 1em, 4vw, 5rem);
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
+  }
+  div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold) 0% , 
+      var(--light-shadow) 23%, 
+      var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+  }
+  .wrapper {
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    text-transform: uppercase;
+  }
+  :root {
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+  }
+  .navbar {
+    background-color: #503459;
+  }
+  .nav-link{
+    color: white;
+  }
+
+  /*Errores*/
+  .errores{
+    display: none;
+    position:absolute;
+    margin-top: -80px;
+    margin-left: 340px;
+  }
+
+/* Modal*/
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #81638b;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
